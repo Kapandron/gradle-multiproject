@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+//mainClassName = 'com.clevertec.gradleplugin.api.App'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':core')
+}
+
+test {
+    useJUnitPlatform()
+}
